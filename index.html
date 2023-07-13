@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="to_do_list.css" />
+  </head>
+  <body>
+    <div class="to-do-list-box">
+      <h1>To-Do List</h1>
+      <div class="df">
+        <input type="text" name="" id="input-box" />
+        <input type="submit" value="Add +" id="add-btn" onclick="validate()"/>
+      </div>
+      <ul id="ul-list">
+        <li class="list-item done">Exercise</li>
+        <li class="list-item">Study Javascript</li>
+        <li class="list-item done">Eat healthy</li>
+        <li class="list-item">Create react app</li>
+        <li class="list-item">Go to the park</li>
+      </ul>
+      <div class="t-center m-top-15">
+        <input
+          type="submit"
+          value="Clear list"
+          id="clear-btn"
+          class="clear-btn"
+          onclick="clearList()"
+        />
+      </div>
+    </div>
+    <script src="to_do_list.js"></script>
+  </body>
+</html>
